@@ -20,9 +20,8 @@ export default function Header() {
   const { openBooking } = useBooking();
 
   // Mobile navigation accordion states
-  const [mobileResortsOpen, setMobileResortsOpen] = useState(true);
-  const [mobileDiningOpen, setMobileDiningOpen] = useState(false);
-  const [mobileEventsOpen, setMobileEventsOpen] = useState(false);
+  // **Responsive Collapsible Accordions (Mobile)**: Designed mobile-first collapsible dropdowns under "Our Resorts", "Dining", and "Events" showing small thumbnail photo previews next to each property name for a rich navigational experience. Clicking an accordion automatically collapses any previously opened section, maintaining a tidy single-open accordion view.
+  const [mobileActiveAccordion, setMobileActiveAccordion] = useState<"resorts" | "dining" | "events" | null>("resorts");
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12);
@@ -228,18 +227,18 @@ export default function Header() {
           {/* Mobile resorts accordion */}
           <div>
             <button
-              onClick={() => setMobileResortsOpen((v) => !v)}
+              onClick={() => setMobileActiveAccordion(mobileActiveAccordion === "resorts" ? null : "resorts")}
               className="w-full flex items-center justify-between py-3 border-b border-stone-dark/60 text-forest font-display text-xl cursor-pointer"
             >
               <span>Our Resorts</span>
               <svg
                 width="12" height="8" viewBox="0 0 12 8" fill="none"
-                className={`text-gold transition-transform duration-200 ${mobileResortsOpen ? "rotate-180" : ""}`}
+                className={`text-gold transition-transform duration-200 ${mobileActiveAccordion === "resorts" ? "rotate-180" : ""}`}
               >
                 <path d="M1 1l5 5 5-5" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
               </svg>
             </button>
-            <div className={`mt-2 space-y-2 overflow-hidden transition-all duration-300 ${mobileResortsOpen ? "max-h-60 opacity-100" : "max-h-0 opacity-0"}`}>
+            <div className={`mt-2 space-y-2 overflow-hidden transition-all duration-300 ${mobileActiveAccordion === "resorts" ? "max-h-60 opacity-100" : "max-h-0 opacity-0"}`}>
               {properties.map((p) => (
                 <Link
                   key={p.slug}
@@ -259,18 +258,18 @@ export default function Header() {
           {/* Mobile dining accordion */}
           <div>
             <button
-              onClick={() => setMobileDiningOpen((v) => !v)}
+              onClick={() => setMobileActiveAccordion(mobileActiveAccordion === "dining" ? null : "dining")}
               className="w-full flex items-center justify-between py-3 border-b border-stone-dark/60 text-forest font-display text-xl cursor-pointer"
             >
               <span>Dining</span>
               <svg
                 width="12" height="8" viewBox="0 0 12 8" fill="none"
-                className={`text-gold transition-transform duration-200 ${mobileDiningOpen ? "rotate-180" : ""}`}
+                className={`text-gold transition-transform duration-200 ${mobileActiveAccordion === "dining" ? "rotate-180" : ""}`}
               >
                 <path d="M1 1l5 5 5-5" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
               </svg>
             </button>
-            <div className={`mt-2 space-y-2 overflow-hidden transition-all duration-300 ${mobileDiningOpen ? "max-h-60 opacity-100" : "max-h-0 opacity-0"}`}>
+            <div className={`mt-2 space-y-2 overflow-hidden transition-all duration-300 ${mobileActiveAccordion === "dining" ? "max-h-60 opacity-100" : "max-h-0 opacity-0"}`}>
               {properties.map((p) => (
                 <Link
                   key={p.slug}
@@ -295,18 +294,18 @@ export default function Header() {
           {/* Mobile events accordion */}
           <div>
             <button
-              onClick={() => setMobileEventsOpen((v) => !v)}
+              onClick={() => setMobileActiveAccordion(mobileActiveAccordion === "events" ? null : "events")}
               className="w-full flex items-center justify-between py-3 border-b border-stone-dark/60 text-forest font-display text-xl cursor-pointer"
             >
               <span>Events & Lawns</span>
               <svg
                 width="12" height="8" viewBox="0 0 12 8" fill="none"
-                className={`text-gold transition-transform duration-200 ${mobileEventsOpen ? "rotate-180" : ""}`}
+                className={`text-gold transition-transform duration-200 ${mobileActiveAccordion === "events" ? "rotate-180" : ""}`}
               >
                 <path d="M1 1l5 5 5-5" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
               </svg>
             </button>
-            <div className={`mt-2 space-y-2 overflow-hidden transition-all duration-300 ${mobileEventsOpen ? "max-h-60 opacity-100" : "max-h-0 opacity-0"}`}>
+            <div className={`mt-2 space-y-2 overflow-hidden transition-all duration-300 ${mobileActiveAccordion === "events" ? "max-h-60 opacity-100" : "max-h-0 opacity-0"}`}>
               {properties.map((p) => (
                 <Link
                   key={p.slug}
