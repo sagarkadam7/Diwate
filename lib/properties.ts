@@ -47,7 +47,7 @@ export const properties: Property[] = [
     heroImage: diwate(2),
     cardImage: diwate(1),
     intro:
-      "Rooted in the mist-kissed hills of Lonavala, Diwatel Grande Resort offers a welcoming blend of polished comfort and laid-back relaxation. Whether you are hosting a team offsite on our open lawns, celebrating a milestone in our banquet spaces, or simply escaping the bustle of Mumbai and Pune for a quiet weekend with family, our marble-framed rooms and rich multi-cuisine dining make every stay feel personal.",
+      "Hidden in the beautiful hills of Lonavala, Diwatel Grande Resort is a great place to relax and feel at home. Whether you want to have a big office party on our green lawns, celebrate a special day in our party halls, or just take a break from the busy city life of Mumbai and Pune, we have everything you need for a perfect stay",
     phone: "+91 83 8008 8765",
     email: "reservations@diwatelgranderesort.com",
     mapsUrl: "https://maps.google.com/?q=Diwatel+Grande+Resort+Lonavala",
