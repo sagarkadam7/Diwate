@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { properties } from "@/lib/properties";
+import { useBooking } from "@/lib/booking-context";
 
 function toWhatsAppDigits(phone: string) {
   return phone.replace(/[^\d]/g, "");
@@ -10,16 +11,10 @@ function toWhatsAppDigits(phone: string) {
 export default function BookingBar({ defaultSlug }: { defaultSlug?: string }) {
   const [slug, setSlug] = useState(defaultSlug ?? properties[0].slug);
   const selected = properties.find((p) => p.slug === slug) ?? properties[0];
+  const { openBooking } = useBooking();
 
   const handleBook = () => {
-    const message = encodeURIComponent(
-      `Hi, I'd like to enquire about a stay at ${selected.name}, Lonavala.`
-    );
-    window.open(
-      `https://wa.me/${toWhatsAppDigits(selected.phone)}?text=${message}`,
-      "_blank",
-      "noopener,noreferrer"
-    );
+    openBooking(slug);
   };
 
   return (

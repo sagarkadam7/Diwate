@@ -11,6 +11,8 @@ import "@fontsource/jost/600.css";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { BookingProvider } from "@/lib/booking-context";
+import BookingModal from "@/components/BookingModal";
 
 export const metadata: Metadata = {
   title: "Diwate Hospitality | Diwatel Grande Resort & Reviniere Resort and Villa, Lonavala",
@@ -26,10 +28,14 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full antialiased">
       <body className="min-h-full flex flex-col bg-ivory text-ink">
-        <Header />
-        <main className="flex-1">{children}</main>
-        <Footer />
+        <BookingProvider>
+          <Header />
+          <main className="flex-1">{children}</main>
+          <Footer />
+          <BookingModal />
+        </BookingProvider>
       </body>
     </html>
   );
 }
+

@@ -1,6 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { properties } from "@/lib/properties";
+import { useBooking } from "@/lib/booking-context";
 
 const socials = [
   { label: "Instagram", href: "https://instagram.com" },
@@ -9,6 +12,8 @@ const socials = [
 ];
 
 export default function Footer() {
+  const { openBooking } = useBooking();
+
   return (
     <footer id="contact" className="bg-forest text-ivory">
       <div className="mx-auto max-w-6xl px-5 sm:px-6 py-16 sm:py-20">
@@ -56,12 +61,12 @@ export default function Footer() {
                   </a>
                 </p>
               </div>
-              <Link
-                href={`#${p.slug}`}
-                className="mt-6 inline-flex items-center gap-2 text-[11px] tracked-caps text-gold border-b border-gold pb-1 hover:text-ivory hover:border-ivory transition-colors"
+              <button
+                onClick={() => openBooking(p.slug)}
+                className="mt-6 inline-flex items-center gap-2 text-[11px] tracked-caps text-gold border-b border-gold pb-1 hover:text-ivory hover:border-ivory transition-colors cursor-pointer"
               >
                 Enquire Now
-              </Link>
+              </button>
             </div>
           ))}
         </div>
