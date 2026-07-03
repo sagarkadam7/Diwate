@@ -14,11 +14,7 @@ export default function GroupIntro() {
         </h2>
         <Divider className="my-6" />
         <p className="text-[15px] sm:text-base leading-relaxed text-ink/75 font-light max-w-3xl mx-auto">
-          Lonavala has long been Mumbai and Pune&rsquo;s breathing space — misted valleys, old forts,
-          and the smell of chikki in the air. Our two resorts sit within this same hill station,
-          each built for a different rhythm of travel: Diwatel Grande Resort for business retreats
-          and grand celebrations, and Reviniere Resort and Villa for intimate, private getaways.
-          Whichever you choose, expect the same standard of comfort and care.
+          Lonavala has always been the breath of life for Mumbai and Pune &ndash; valleys shrouded in mist, forts and the aroma of chikki in the air. We have two resorts that exist right here in Lonavala &ndash; Diwatel Grande Resort for business meets and grand celebrations, and Reviniere Resort and Villa for privacy and personal get-togethers. But regardless of which resort you visit, you can be sure of the same level of luxury and hospitality.
         </p>
       </div>
 
