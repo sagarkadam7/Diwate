@@ -20,7 +20,7 @@ export default function Footer() {
         <div className="text-center mb-14">
           <Image
             src="/images/logo/crest-final.png"
-            alt="Diwate Hospitality crest"
+            alt="Riyo Hospitality crest"
             width={745}
             height={462}
             className="h-14 sm:h-16 w-auto object-contain mx-auto mb-5"
@@ -73,7 +73,7 @@ export default function Footer() {
 
         <div className="mt-14 flex flex-col sm:flex-row items-center justify-between gap-6 border-t border-ivory/15 pt-8">
           <p className="text-xs text-ivory/50 font-light order-2 sm:order-1">
-            &copy; {new Date().getFullYear()} Diwate Hospitality. All rights reserved.
+            &copy; {new Date().getFullYear()} Riyo Hospitality. All rights reserved.
           </p>
           <div className="flex items-center gap-6 order-1 sm:order-2 tracked-caps text-[10px] text-ivory/70">
             {socials.map((s) => (

@@ -87,7 +87,7 @@ export default function BookingModal() {
 
   const handleWhatsAppSend = () => {
     const message = encodeURIComponent(
-      `*Luxury Stay Enquiry - Diwate Hospitality*\n\n` +
+      `*Luxury Stay Enquiry - Riyo Hospitality*\n\n` +
       `*Booking ID:* ${bookingId}\n` +
       `*Resort:* ${selectedProperty.name}\n` +
       `*Room Type:* ${roomName}\n` +

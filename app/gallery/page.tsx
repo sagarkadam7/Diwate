@@ -6,7 +6,7 @@ import Eyebrow from "@/components/Eyebrow";
 import { properties } from "@/lib/properties";
 
 export const metadata: Metadata = {
-  title: "Gallery | Diwate Hospitality",
+  title: "Gallery | Riyo Hospitality",
   description: "Choose a resort to view its full photo gallery.",
 };
 

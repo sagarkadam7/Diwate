@@ -23,7 +23,7 @@ export default function Hero() {
         >
           <Image
             src={src}
-            alt="A resort of Diwate Hospitality in Lonavala"
+            alt="A resort of Riyo Hospitality in Lonavala"
             fill
             priority={i === 0}
             sizes="100vw"

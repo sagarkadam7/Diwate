@@ -8,7 +8,7 @@ export default function GroupIntro() {
   return (
     <section className="bg-ivory py-16 sm:py-24">
       <div className="mx-auto max-w-5xl px-5 sm:px-6 text-center">
-        <Eyebrow>Welcome to Diwate Hospitality</Eyebrow>
+        <Eyebrow>Welcome to Riyo Hospitality</Eyebrow>
         <h2 className="font-display text-3xl sm:text-5xl text-forest leading-tight">
           Rest, Rejoice, and Reconnect in the Hills of Lonavala
         </h2>

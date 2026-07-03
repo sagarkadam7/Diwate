@@ -91,7 +91,7 @@ export default async function EventsDetailPage({
               </h2>
               <Divider className="my-4 !justify-start" />
               <p className="text-sm sm:text-base text-ink/75 leading-relaxed font-light">
-                Whether you're organizing a focused corporate board brainstorming session, a destination wedding celebration, or a cozy campfire anniversary party, Diwate Hospitality offers refined venues tailored to host your moments.
+                Whether you're organizing a focused corporate board brainstorming session, a destination wedding celebration, or a cozy campfire anniversary party, Riyo Hospitality offers refined venues tailored to host your moments.
               </p>
               <p className="text-sm text-ink/70 leading-relaxed font-light">
                 Our team takes care of styling layouts, customized banquet menus, audio-visual coordinate requirements, and power support so you can focus entirely on your guests.

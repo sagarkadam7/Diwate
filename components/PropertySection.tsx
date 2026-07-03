@@ -139,7 +139,7 @@ export default function PropertySection({ property }: { property: Property }) {
             <Divider className="mt-5" />
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-3">
-            {property.gallery.slice(0, 4).map((src, i) => (
+            {property.gallery.slice(0, 5).map((src, i) => (
               <div
                 key={src}
                 className={`relative overflow-hidden ${

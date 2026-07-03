@@ -57,7 +57,7 @@ export default function Header() {
             <Link href="/" className="flex items-center gap-2.5 shrink-0">
               <Image
                 src="/images/logo/crest-final.png"
-                alt="Diwate Hospitality crest"
+                alt="Riyo Hospitality crest"
                 width={745}
                 height={462}
                 className="h-9 sm:h-11 w-auto object-contain"
@@ -68,7 +68,7 @@ export default function Header() {
                   solid ? "text-forest" : "text-ivory"
                 }`}
               >
-                Diwate Hospitality
+                Riyo Hospitality
               </span>
             </Link>
 

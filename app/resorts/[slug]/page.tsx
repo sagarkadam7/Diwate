@@ -16,7 +16,7 @@ export async function generateMetadata({
   const property = properties.find((p) => p.slug === slug);
   if (!property) return {};
   return {
-    title: `${property.name} | ${property.location} | Diwate Hospitality`,
+    title: `${property.name} | ${property.location} | Riyo Hospitality`,
     description: property.intro,
   };
 }
