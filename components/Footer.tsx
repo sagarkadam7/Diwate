@@ -17,7 +17,7 @@ export default function Footer() {
   return (
     <footer id="contact" className="bg-forest text-ivory">
       <div className="mx-auto max-w-6xl px-5 sm:px-6 py-16 sm:py-20">
-        <div className="text-center mb-14">
+        <div className="text-center mb-10">
           <Image
             src="/images/logo/crest-final.png"
             alt="Riyo Hospitality crest"
@@ -26,9 +26,6 @@ export default function Footer() {
             className="h-14 sm:h-16 w-auto object-contain mx-auto mb-5"
           />
           <h2 className="font-display text-3xl sm:text-4xl">Plan Your Stay</h2>
-          <p className="mt-3 text-sm text-ivory/70 font-light max-w-xl mx-auto">
-            Reach out to either resort directly for reservations, events, or day-visit enquiries.
-          </p>
         </div>
 
         <div className="grid gap-10 sm:gap-8 sm:grid-cols-2">

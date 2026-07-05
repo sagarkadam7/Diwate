@@ -34,8 +34,8 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-t from-ink/85 via-ink/40 to-ink/60" />
 
       <div className="relative z-10 flex h-full flex-col items-center justify-center px-5 text-center">
-        <h1 className="font-display text-ivory text-[2.5rem] leading-[1.08] sm:text-6xl md:text-7xl max-w-4xl">
-          Two Resorts. One Standard of Grace.
+        <h1 className="font-display text-ivory text-[2.5rem] leading-[1.08] sm:text-6xl md:text-7xl max-w-4xl drop-shadow-lg">
+          Two Resorts. <span className="text-gold">One Standard of Grace.</span>
         </h1>
         <div className="mt-9 flex flex-col sm:flex-row gap-4 w-full max-w-md sm:max-w-none sm:w-auto">
           <a
@@ -59,8 +59,8 @@ export default function Hero() {
             key={i}
             aria-label={`Show slide ${i + 1}`}
             onClick={() => setIndex(i)}
-            className={`h-1.5 rounded-full transition-all ${
-              i === index ? "w-7 bg-gold" : "w-1.5 bg-ivory/50"
+            className={`h-[3px] rounded-full transition-all duration-500 ${
+              i === index ? "w-10 bg-gold" : "w-6 bg-ivory/40 hover:bg-ivory/80"
             }`}
           />
         ))}

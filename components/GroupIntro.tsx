@@ -13,7 +13,7 @@ export default function GroupIntro() {
           Rest, Rejoice, and Reconnect in the Hills of Lonavala
         </h2>
         <Divider className="my-6" />
-        <p className="text-[15px] sm:text-base leading-relaxed text-ink/75 font-light max-w-2xl mx-auto">
+        <p className="text-[15px] sm:text-base leading-relaxed text-ink/75 font-light max-w-4xl mx-auto">
           Escape to the scenic hills of Lonavala. Discover Diwatel Grande Resort for business meets and grand celebrations, or Reviniere Resort and Villa for private getaways. Both promise our signature blend of luxury and hospitality.
         </p>
       </div>
