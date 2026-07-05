@@ -35,7 +35,7 @@ export default function Hero() {
 
       <div className="relative z-10 flex h-full flex-col items-center justify-center px-5 text-center">
         <h1 className="font-display text-ivory text-[2.5rem] leading-[1.08] sm:text-6xl md:text-7xl max-w-4xl drop-shadow-lg">
-          Two Resorts. <span className="text-gold">One Standard of Grace.</span>
+          Two Resorts. <span className="text-gold">One Standard of Luxury.</span>
         </h1>
         <div className="mt-9 flex flex-col sm:flex-row gap-4 w-full max-w-md sm:max-w-none sm:w-auto">
           <a

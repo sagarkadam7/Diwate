@@ -10,11 +10,11 @@ export default function GroupIntro() {
       <div className="mx-auto max-w-5xl px-5 sm:px-6 text-center">
         <Eyebrow>Welcome to Riyo Hospitality</Eyebrow>
         <h2 className="font-display text-3xl sm:text-5xl text-forest leading-tight">
-          Rest, Rejoice, and Reconnect in the Hills of Lonavala
+          Two Resorts in the Hills of Lonavala, One Standard of Luxury
         </h2>
         <Divider className="my-6" />
         <p className="text-[15px] sm:text-base leading-relaxed text-ink/75 font-light max-w-4xl mx-auto">
-          Escape to the scenic hills of Lonavala. Discover Diwatel Grande Resort for business meets and grand celebrations, or Reviniere Resort and Villa for private getaways. Both promise our signature blend of luxury and hospitality.
+          Business meets, weddings, or private getaways — find your fit below.
         </p>
       </div>
 
