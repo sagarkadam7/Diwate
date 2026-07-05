@@ -3,10 +3,10 @@ import Divider from "./Divider";
 import Eyebrow from "./Eyebrow";
 
 const highlights = [
-  { name: "Multi-Cuisine Dining", image: "/images/diwate/diwate-07.jpg" },
-  { name: "Event & Banquet Spaces", image: "/images/diwate/diwate-13.jpg" },
-  { name: "24-Hour Front Desk", image: "/images/revinerr/reviniere-11.jpg" },
-  { name: "Pool & Leisure Deck", image: "/images/revinerr/reviniere-13.jpg" },
+  { name: "Luxury Rooms", image: "/images/diwate/diwate-07.jpg" },
+  { name: "Swimming Pool", image: "/images/diwate/diwate-13.jpg" },
+  { name: "Scenic View", image: "/images/diwate/diwate-12.jpg" },
+  { name: "Private Balconies", image: "/images/revinerr/reviniere-13.jpg" },
 ];
 
 export default function HighlightsStrip() {

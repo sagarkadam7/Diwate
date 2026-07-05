@@ -37,8 +37,7 @@ export default function Footer() {
               key={p.slug}
               className="border border-ivory/15 px-6 py-8 sm:px-8 sm:py-9 text-center sm:text-left"
             >
-              <h3 className="font-display text-xl sm:text-2xl text-gold-pale">{p.name}</h3>
-              <p className="tracked-caps text-[10px] text-ivory/50 mt-2 mb-5">{p.location}</p>
+              <h3 className="font-display text-xl sm:text-2xl text-gold-pale mb-5">{p.name}</h3>
               <div className="space-y-2.5 text-sm font-light text-ivory/85">
                 <p>
                   <a href={`tel:${p.phone.replace(/\s/g, "")}`} className="hover:text-gold transition-colors">

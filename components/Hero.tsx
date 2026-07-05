@@ -31,29 +31,22 @@ export default function Hero() {
           />
         </div>
       ))}
-      <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/25 to-ink/50" />
+      <div className="absolute inset-0 bg-gradient-to-t from-ink/85 via-ink/40 to-ink/60" />
 
       <div className="relative z-10 flex h-full flex-col items-center justify-center px-5 text-center">
-        <p className="tracked-caps text-[11px] sm:text-xs text-gold-pale mb-5">
-          Lonavala, Maharashtra
-        </p>
         <h1 className="font-display text-ivory text-[2.5rem] leading-[1.08] sm:text-6xl md:text-7xl max-w-4xl">
           Two Resorts. One Standard of Grace.
         </h1>
-        <p className="mt-6 max-w-xl text-sm sm:text-base text-ivory/85 font-light">
-          Diwatel Grande Resort and Reviniere Resort and Villa — a small collection of premium
-          stays in the hills of Lonavala.
-        </p>
         <div className="mt-9 flex flex-col sm:flex-row gap-4 w-full max-w-md sm:max-w-none sm:w-auto">
           <a
             href="/resorts/diwatel-grande-resort"
-            className="inline-flex items-center justify-center border border-ivory px-7 py-3.5 tracked-caps text-[11px] font-medium text-ivory hover:bg-ivory hover:text-forest transition-colors"
+            className="inline-flex items-center justify-center bg-ivory text-forest px-8 py-4 tracked-caps text-[11px] font-semibold hover:bg-gold hover:text-ink transition-all duration-300 shadow-md border border-transparent"
           >
             Diwatel Grande Resort
           </a>
           <a
             href="/resorts/reviniere-resort-and-villa"
-            className="inline-flex items-center justify-center border border-gold bg-gold px-7 py-3.5 tracked-caps text-[11px] font-medium text-ink hover:bg-gold-deep hover:border-gold-deep transition-colors"
+            className="inline-flex items-center justify-center bg-ivory text-forest px-8 py-4 tracked-caps text-[11px] font-semibold hover:bg-gold hover:text-ink transition-all duration-300 shadow-md border border-transparent"
           >
             Reviniere Resort and Villa
           </a>

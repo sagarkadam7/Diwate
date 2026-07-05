@@ -98,7 +98,7 @@ export const properties: Property[] = [
       { name: "Banquet & Event Lawns", hours: "By appointment", image: diwate(13) },
       { name: "Multi-Cuisine Restaurant", hours: "7:00 AM – 11:00 PM", image: diwate(16) },
       { name: "Landscaped Gardens", image: diwate(11) },
-      { name: "24-Hour Front Desk", hours: "Round the clock", image: diwate(6) },
+      { name: "24-Hour Front Desk", hours: "Round the clock", image: diwate(12) },
     ],
   },
   {
@@ -169,4 +169,4 @@ export const properties: Property[] = [
   },
 ];
 
-export const heroSlides = [diwate(2), revin(13), diwate(11), revin(15)];
+export const heroSlides = [diwate(13), revin(4), diwate(26), revin(16)];

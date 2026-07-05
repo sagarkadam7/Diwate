@@ -21,9 +21,7 @@ export default function PropertySection({ property }: { property: Property }) {
         />
         <div className="absolute inset-0 bg-ink/45" />
         <div className="relative z-10 flex h-full flex-col items-center justify-center text-center px-5">
-          <p className="tracked-caps text-[11px] text-gold-pale mb-3">{property.location}</p>
           <h2 className="font-display text-ivory text-4xl sm:text-6xl">{property.name}</h2>
-          <p className="mt-3 text-sm sm:text-base text-ivory/85 font-light">{property.tagline}</p>
         </div>
       </div>
 
