@@ -10,7 +10,7 @@ export default function GroupIntro() {
       <div className="mx-auto max-w-5xl px-5 sm:px-6 text-center">
         <Eyebrow>Welcome to Riyo Hospitality</Eyebrow>
         <h2 className="font-display text-3xl sm:text-5xl text-forest leading-tight">
-          Two Resorts in the Hills of Lonavala, One Standard of Luxury
+          Two Resorts in the Hills of Lonavala, One Standard of Hospitality
         </h2>
         <Divider className="my-6" />
         <p className="text-[15px] sm:text-base leading-relaxed text-ink/75 font-light max-w-4xl mx-auto">
